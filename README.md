@@ -4,6 +4,7 @@
 This repository contains the frontend built with React (TypeScript) and a backend with Firebase Cloud Services. The frontend(client) is containerized using Docker for easy deployment and management.
 
 - [Demo Video Link](https://drive.google.com/file/d/1q0vsAYsO3VFzNg2wmn1wrrjIIEke3PDA/view?usp=sharing)
+- [Hostes Link](http://ec2-13-201-225-101.ap-south-1.compute.amazonaws.com)
 
 ## Requirements
 - Docker
