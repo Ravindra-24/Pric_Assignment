@@ -3,7 +3,7 @@
 
 This repository contains the frontend built with React (TypeScript) and a backend with Firebase Cloud Services. The frontend(client) is containerized using Docker for easy deployment and management.
 
-- [Demo Link](https://drive.google.com/file/d/1q0vsAYsO3VFzNg2wmn1wrrjIIEke3PDA/view?usp=sharing)
+- [Demo Video Link](https://drive.google.com/file/d/1q0vsAYsO3VFzNg2wmn1wrrjIIEke3PDA/view?usp=sharing)
 
 ## Requirements
 - Docker
@@ -52,3 +52,71 @@ This repository contains the frontend built with React (TypeScript) and a backen
 
 
 
+
+## API Documentation
+
+### Base URL
+The base URL for the API endpoints is `https://asia-south1-pric-assignment.cloudfunctions.net`
+
+### Endpoints
+#### 1. Create User
+
+Endpoint: POST /user-createUser
+
+Description: Create a new user.
+
+Request Body:
+```
+ {
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "password": *****
+} 
+```
+
+
+ #### 2. Get All Users
+
+ Endpoint: GET /user-getUser
+
+Description: Get all users.
+
+Response:
+
+Status Code: "200 OK"
+Body:
+```
+[
+  {
+    "id": "user-id-1",
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "password": *****
+  },
+  {
+    "id": "user-id-2",
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "password": *****
+  }
+]
+```
+
+#### 3.Update User
+Endpoint: PATCH /user-updateUser
+
+Description: Update a user by ID.
+
+Request Body:
+```
+{
+  "id":"userId"
+  "name": "Updated Name",
+  "email": "update email",
+  "password": "******"
+}
+```
+#### 4.Delete User
+Endpoint: DELETE /user-deleteUser/?userId=${userId}
+
+Description: Delete a user by ID.
